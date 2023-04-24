@@ -20,7 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import Button from '@mui/material/Button';
 import { useState ,useEffect} from 'react';
-// import Login from './Components/Login';
+import Login from './Login';
 import { Avatar, Grid } from '@mui/material';
 import MyProfile from './MyProfile';
 import CloseIcon from '@mui/icons-material/Close';
@@ -115,7 +115,7 @@ export default function Sidenav() {
       const timer = setTimeout(() => {
         setShowAlert(true);
       }, 10000); 
-    },[])
+    })
 
     const HandleCrossClick =()=>{
         setShowAlert(false)
@@ -222,7 +222,7 @@ export default function Sidenav() {
           </h1>
           <p className="mb-11">"We assure you to provide Best Photographers Near you at Best Prize"</p>
           <CloseIcon onClick={HandleCrossClick} style={CrossIconStyle}/>
-          {/* <Login/> */}
+          <Login/>
 </Grid>
         )}
   

@@ -1,5 +1,5 @@
 import React from 'react'
-// import myPic from './Components/my pic.jpg'
+import myPic from './my pic.jpg'
 import { Typography, Grid } from '@mui/material'
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import ChartHorizontal from './ChartHorizontal';
@@ -16,7 +16,7 @@ function MyProfile() {
         <>
             <div className="flex font-sans">
                 <div className="flex-none w-48 relative">
-                    {/* <img src={myPic} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" /> */}
+                    <img src={myPic} alt="" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
                 </div>
                 <form className="flex-auto p-6">
                     <div className="flex flex-wrap">

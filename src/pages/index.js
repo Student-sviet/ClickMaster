@@ -36,11 +36,12 @@ export default function Home() {
   return (
    
     <Wrapper>
-      <Sidenav />
+     
       {/* <Map id="map" /> */}
       <MapWrapper>
-      <HomepageMap id ="map"/></MapWrapper>
-    <ActionItems>
+      <HomepageMap id ="map"/>
+      <Sidenav />
+      
       <Header>
         
         <UberLogo src= "https://theuniques.in//images/clickmasterslogo.png" />
@@ -72,10 +73,14 @@ export default function Home() {
       Help</ActionButton></Link>
       </Help>
       </ActionButtons>
+      </MapWrapper>
+    {/* 
       
-      {/* <InputButtons>Where To?</InputButtons> */}
-    </ActionItems>
+      
+      
+    </ActionItems>  */}
     
+      {/* <InputButtons>Where To?</InputButtons> */}
     
   
    </Wrapper>
@@ -86,8 +91,10 @@ const Wrapper = tw.div`
 flex flex-col h-screen 
  `
 
+
 const ActionItems = tw.div`
-flex-1 p-4
+h-96
+
 `
 const Header = tw.div `
 flex justify-between items-center
@@ -108,9 +115,9 @@ flex mt-5
 `
 const ActionButton = tw.div `
 flex bg-gray-200 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg transform hover:scale-105 transition text-xl` 
-const ActionButtonImage =tw.img`
-h-3/5
-`
+// const ActionButtonImage =tw.img`
+// h-3/5
+// `
 const InputButtons = tw.div`
 h-20 bg-gray-200 text-2xl p-4 flex item-center mt-8
 `
@@ -122,4 +129,4 @@ flex-1 m-1
 h-80 items-center flex-col justify-center rounded-lg transform hover:scale-105 transition text-xl`
 
 const MapWrapper = tw.div`
-flex-1 h-screen`
+flex-1 h-screen overflow-hidden`
