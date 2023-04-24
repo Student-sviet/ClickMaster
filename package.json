@@ -9,11 +9,37 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "autoprefixer": "10.4.14",
+    "@datepicker-react/styled": "^2.8.4",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.1",
+    "axios": "^1.3.6",
+    "chart": "^0.1.2",
+    "chart.js": "^4.2.1",
+    "firebase": "^9.20.0",
+    "mapbox-gl": "^2.14.1",
     "next": "13.3.0",
-    "postcss": "8.4.22",
+    "nodemailer": "^6.9.1",
     "react": "18.2.0",
+    "react-azure-maps": "^0.4.5",
+    "react-calendar": "^4.2.1",
+    "react-chartjs": "^1.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.11.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.1"
+    "react-google-autocomplete": "^2.7.3",
+    "react-icons": "^4.8.0",
+    "react-mapbox-autocomplete": "^0.2.3",
+    "react-native-webview": "^12.0.2",
+    "react-rating": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.37",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.22",
+    "tailwindcss": "^3.3.1",
+    "typescript": "5.0.4"
   }
 }
